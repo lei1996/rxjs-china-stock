@@ -3,9 +3,14 @@
     "ts-node-starter": "dist/cli.js"
   },
   "bugs": {
-    "url": "https://github.com/bennycode/ts-node-starter/issues"
+    "url": "https://github.com/lei1996/rxjs-china-stock/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "0.27.2",
+    "moment": "2.29.4",
+    "rxjs": "7.5.6",
+    "xlsx": "0.18.5"
+  },
   "description": "",
   "devDependencies": {
     "@arkweid/lefthook": "0.7.7",
@@ -37,15 +42,15 @@
     "dist",
     "!dist/**/*.test.*"
   ],
-  "homepage": "https://www.npmjs.com/package/ts-node-starter",
+  "homepage": "https://www.npmjs.com/package/rxjs-china-stock",
   "keywords": [],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "dist/index.js",
-  "name": "@bennycode/ts-node-starter",
+  "name": "rxjs-china-stock",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bennycode/ts-node-starter.git"
+    "url": "git+https://github.com/lei1996/rxjs-china-stock.git"
   },
   "scripts": {
     "build": "tsc",
@@ -72,5 +77,5 @@
     "test:unit": "cross-env NODE_ENV=test jest ./src --passWithNoTests",
     "test:unit:coverage": "yarn test:unit --coverage"
   },
-  "version": "0.0.0"
+  "version": "0.0.2"
 }
