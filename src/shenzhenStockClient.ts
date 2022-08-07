@@ -80,8 +80,8 @@ export class ShenZhenStockClient {
     return defer(() =>
       axios
         .get(`${this.apiUrl}${this.splicingUrl(url)}`, {
-          timeout: 10 * 1000,
           responseType: 'arraybuffer',
+          timeout: 10 * 1000,
         })
         .then(x => x.data)
     );
