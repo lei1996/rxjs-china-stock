@@ -23,11 +23,17 @@ export class ShenZhenStockClient {
    * @returns []
    */
   fetchConvertibleBondData() {
-    return this.callBufferApi(
-      `/api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=1277&TABKEY=tab1&txtDate=${moment(
-        new Date(new Date().setHours(-72))
-      ).format('YYYY-MM-DD')}`
-    ).pipe(
+    const weekOfDay = moment().format('E');
+    let date = '';
+    if (+weekOfDay > 5 || +weekOfDay === 1) {
+      date = moment()
+        .subtract(+weekOfDay - 4, 'days')
+        .format('YYYY-MM-DD');
+    } else {
+      date = moment(new Date(new Date().setHours(-24))).format('YYYY-MM-DD');
+    }
+
+    return this.callBufferApi(`/api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=1277&TABKEY=tab1&txtDate=${date}`).pipe(
       map(x => xlsx.read(x, {type: 'buffer'})),
       map(x => xlsx.utils.sheet_to_json(x.Sheets[x.SheetNames[0]]))
     );
