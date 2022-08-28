@@ -25,7 +25,7 @@ export class ShenZhenStockClient {
   fetchConvertibleBondData() {
     return this.callBufferApi(
       `/api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=1277&TABKEY=tab1&txtDate=${moment(
-        new Date(new Date().setHours(-24))
+        new Date(new Date().setHours(-72))
       ).format('YYYY-MM-DD')}`
     ).pipe(
       map(x => xlsx.read(x, {type: 'buffer'})),
