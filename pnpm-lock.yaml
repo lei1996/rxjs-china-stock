@@ -12,8 +12,8 @@ importers:
         specifier: 1.18.1
         version: 1.18.1(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       moment:
-        specifier: 2.30.1
-        version: 2.30.1
+        specifier: 2.31.0
+        version: 2.31.0
       rxjs:
         specifier: 7.8.2
         version: 7.8.2
@@ -1564,8 +1564,8 @@ packages:
     resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  moment@2.30.1:
-    resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
+  moment@2.31.0:
+    resolution: {integrity: sha512-0acOTfMiWOheYS4eoWb80yYMb/JLvVv9SHbs2PehaDzfUG0Bw855SKyk0IKTnPGa5+U2bmi3W68l1+sGLX/pvw==}
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -3848,7 +3848,7 @@ snapshots:
 
   minipass@7.1.3: {}
 
-  moment@2.30.1: {}
+  moment@2.31.0: {}
 
   mri@1.2.0: {}
 
